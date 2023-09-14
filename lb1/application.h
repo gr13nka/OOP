@@ -1,11 +1,18 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-class Application 
+#include <curses.h>
+#include <ncurses.h>
+#include <iostream>
+#include "matrix.h"
+
+class Application
 {
 public:
-	Application();
-	int exec();
+    Application();
+    void print_menu();
+    int run_function(Matrix m, int selected);
+    int exec();
 };
 
 #endif

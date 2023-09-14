@@ -2,6 +2,7 @@
 
 int main()
 {
-	Application a;
-	return a.exec();
+    Application a;
+    int aga = a.exec();
+    return aga;
 }
