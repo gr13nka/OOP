@@ -61,7 +61,7 @@ int Application::run_function(Matrix* m, int selected)
 
 Application::Application(){}
 
-int Application::exec()
+void Application::exec()
 {
     int key,stop;
     Matrix m;
@@ -74,8 +74,7 @@ int Application::exec()
         stop = run_function(&m,key);
 
         if(stop == 1)
-            return 0;
+            return;
     }
-
-    return 1;
+    return;
 }

@@ -12,7 +12,7 @@ public:
     Application();
     void print_menu();
     int run_function(Matrix* m, int selected);
-    int exec();
+    void exec();
 };
 
 #endif

@@ -9,10 +9,11 @@ class Matrix
 private:
         number matrix[3][3];
 public:
+        Matrix();
         void change_matrix();
         void det();
         void transpose(); //by number
-        int rang();
+        void rang();
         void show_matrix();
 };
 
