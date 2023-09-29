@@ -27,7 +27,7 @@ complex complex::operator*(complex c)
 {
     complex t;
     t.re = c.re*re - c.im*im;
-    t.im = c.re*im + c.im*im;
+    t.im = c.re*im + c.im*re;
     return t;
 }
 
@@ -42,15 +42,15 @@ complex complex::operator/(complex c)
 complex complex::operator+(complex c)
 {
     complex t;
-    t.re = c.re+re;
-    t.im = im + c.im;
+    t.re = c.re + re;
+    t.im = c.im + im;
     return t;
 }
 
 complex complex::operator-(complex c)
 {
     complex t;
-    t.re = c.re-re;
+    t.re = re - c.re;
     t.im = im - c.im;
     return t;
 }
