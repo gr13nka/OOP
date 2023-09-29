@@ -75,7 +75,7 @@ bool complex::operator<(complex c)
 bool complex::operator!=(complex c)
 {
     if (re != c.re || c.im != 0)
-        return false;
-    else
         return true;
+    else
+        return false;
 }
